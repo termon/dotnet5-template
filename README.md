@@ -7,11 +7,18 @@ Alternatively you can use the dotnet command as normal to create/run projects fr
 ```
 $ ./dotnet -h
 ```
-To create a sample mvc project
+To create a sample console project in a folder called Demo
 ```
-$ ./dotnet new mvc
+$ ./dotnet new console -o Demo
 ```
 To run the project click Run or at prompt
 ```
-$ ./dotnet run
+$ ./dotnet run -p demo
+```
+
+To configure the repl.it Run button, edit the .replit file and change the run command to specify the name of the project to run using -p <projectname> (-p demo in this example)
+
+```
+run = "./dotnet run -p demo"
+
 ```
